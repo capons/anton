@@ -24,6 +24,8 @@
       </div>
       <div class="new-text">
         <p><?php the_excerpt();?></p>
+          <!--Display custom field -->
+          <h1>Цена <?php the_field('price'); ?> грн</h1>
         <div class="read-btn">
           <a href="<?php echo esc_url( get_permalink() );?>" class="blogbutton-small hvr-sweep-to-right" title="<?php esc_attr_e( 'Read More', 'bb-ecommerce-store' ); ?>"><?php esc_html_e('Read More','bb-ecommerce-store'); ?></a>
         </div>

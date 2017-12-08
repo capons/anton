@@ -151,13 +151,13 @@ get_header(); ?>
             
             while ( have_posts() ) : the_post();
 
-              get_template_part( 'template-parts/content' ); 
-            
+              get_template_part( 'template-parts/content' );
+
             endwhile;
 
             else :
 
-              get_template_part( 'no-results', 'archive' ); 
+              get_template_part( 'no-results', 'archive' );
 
             endif; 
         ?>
