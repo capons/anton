@@ -18,24 +18,24 @@ get_header(); ?>
 <div class="container">
   <?php
     $left_right = get_theme_mod( 'bb_ecommerce_store_theme_options','One Column');
-    if($left_right == 'Left Sidebar'){ ?> 
+    if($left_right == 'Left Sidebar'){ ?>
     <div class="col-md-4 col-sm-4"><?php get_sidebar(); ?></div>
     <section id="our-services" class="services flipInX col-md-8 col-sm-8">
-                  
+
         <?php if ( have_posts() ) :
           /* Start the Loop */
-            
+
             while ( have_posts() ) : the_post();
 
-              get_template_part( 'template-parts/content' ); 
-            
+              get_template_part( 'template-parts/content' );
+
             endwhile;
 
             else :
 
-              get_template_part( 'no-results', 'archive' ); 
+              get_template_part( 'no-results', 'archive' );
 
-            endif; 
+            endif;
         ?>
         <div class="navigation">
           <?php
@@ -51,21 +51,21 @@ get_header(); ?>
     </section>
   <?php }else if($left_right == 'Right Sidebar'){ ?>
     <section id="our-services" class="services flipInX col-md-8 col-sm-8">
-                  
+
         <?php if ( have_posts() ) :
           /* Start the Loop */
-            
+
             while ( have_posts() ) : the_post();
 
-              get_template_part( 'template-parts/content' ); 
-            
+              get_template_part( 'template-parts/content' );
+
             endwhile;
 
             else :
 
-              get_template_part( 'no-results', 'archive' ); 
+              get_template_part( 'no-results', 'archive' );
 
-            endif; 
+            endif;
         ?>
         <div class="navigation">
           <?php
@@ -82,21 +82,21 @@ get_header(); ?>
     <div class="col-md-4 col-sm-4"><?php get_sidebar(); ?></div>
   <?php }else if($left_right == 'One Column'){ ?>
     <section id="our-services" class="services flipInX col-md-12">
-                  
+
         <?php if ( have_posts() ) :
           /* Start the Loop */
-            
+
             while ( have_posts() ) : the_post();
 
-              get_template_part( 'template-parts/content' ); 
-            
+              get_template_part( 'template-parts/content' );
+
             endwhile;
 
             else :
 
-              get_template_part( 'no-results', 'archive' ); 
+              get_template_part( 'no-results', 'archive' );
 
-            endif; 
+            endif;
         ?>
         <div class="navigation">
           <?php
@@ -113,21 +113,21 @@ get_header(); ?>
   <?php }else if($left_right == 'Three Columns'){ ?>
     <div id="sidebar" class="col-md-3 col-ms-3"><?php dynamic_sidebar('sidebar-1');?></div>
     <section id="our-services" class="services flipInX col-md-6 col-sm-6">
-                  
+
         <?php if ( have_posts() ) :
           /* Start the Loop */
-            
+
             while ( have_posts() ) : the_post();
 
-              get_template_part( 'template-parts/content' ); 
-            
+              get_template_part( 'template-parts/content' );
+
             endwhile;
 
             else :
 
-              get_template_part( 'no-results', 'archive' ); 
+              get_template_part( 'no-results', 'archive' );
 
-            endif; 
+            endif;
         ?>
         <div class="navigation">
           <?php
@@ -145,10 +145,10 @@ get_header(); ?>
   <?php }else if($left_right == 'Four Columns'){ ?>
     <div id="sidebar" class="col-md-3 col-ms-3"><?php dynamic_sidebar('sidebar-1');?></div>
     <section id="our-services" class="services flipInX col-md-3 col-sm-3">
-                  
+
         <?php if ( have_posts() ) :
           /* Start the Loop */
-            
+
             while ( have_posts() ) : the_post();
 
               get_template_part( 'template-parts/content' );
@@ -159,7 +159,7 @@ get_header(); ?>
 
               get_template_part( 'no-results', 'archive' );
 
-            endif; 
+            endif;
         ?>
         <div class="navigation">
           <?php
@@ -177,21 +177,21 @@ get_header(); ?>
     <div id="sidebar" class="col-md-3 col-ms-3"><?php dynamic_sidebar('sidebar-3');?></div>
   <?php }else if($left_right == 'Grid Layout'){ ?>
     <section id="our-services" class="services flipInX col-md-12">
-                  
+
         <?php if ( have_posts() ) :
           /* Start the Loop */
-            
+
             while ( have_posts() ) : the_post();
 
-              get_template_part( 'template-parts/grid-layout' ); 
-            
+              get_template_part( 'template-parts/grid-layout' );
+
             endwhile;
 
             else :
 
-              get_template_part( 'no-results', 'archive' ); 
+              get_template_part( 'no-results', 'archive' );
 
-            endif; 
+            endif;
         ?>
         <div class="navigation">
           <?php

@@ -39,7 +39,7 @@ get_header(); ?>
 				      <?php
 				        $bb_ecommerce_store_n = 0;
 						while ( $query->have_posts() ) : $query->the_post();
-						  
+
 						  $bb_ecommerce_store_n++;
 						  $bb_ecommerce_store_slideno[] = $bb_ecommerce_store_n;
 						  $bb_ecommerce_store_slidetitle[] = get_the_title();
@@ -79,7 +79,7 @@ get_header(); ?>
 
 		<section id="our-products">
 		    <div class="text-center innerlightbox">
-		        <?php if( get_theme_mod('bb_ecommerce_store_sec1_title') != ''){ ?>     
+		        <?php if( get_theme_mod('bb_ecommerce_store_sec1_title') != ''){ ?>
 		            <h3><?php echo esc_html(get_theme_mod('bb_ecommerce_store_sec1_title',__('New Products','bb-ecommerce-store'))); ?></h3>
 		        <?php }?>
 		    </div>
@@ -109,7 +109,7 @@ get_header(); ?>
 			      <div class="no-postfound"></div>
 			  <?php endif;
 			endif;?>
-		    <div class="clearfix"></div> 
+		    <div class="clearfix"></div>
 		</section>
 	</div>
 </div>

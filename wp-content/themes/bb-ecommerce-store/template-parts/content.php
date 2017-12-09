@@ -7,7 +7,13 @@
  * @since Ecommerce Store 1.0
  */
 ?>
-  <div id="post-<?php the_ID(); ?>" <?php post_class('inner-service'); ?>>
+<style>
+    .box-image img {
+        height: 200px !important;
+        width: auto !important;
+    }
+</style>
+  <div class="col-lg-4" id="post-<?php the_ID(); ?>" <?php post_class('inner-service'); ?>>
 
       <h3 class="ecomercepost-title"><a href="<?php echo esc_url( get_permalink() ); ?>" title="<?php the_title_attribute(); ?>"><?php the_title();?></a></h3>
   	  <div class="metabox">
@@ -27,7 +33,7 @@
           <!--Display custom field -->
           <h1>Цена <?php the_field('price'); ?> грн</h1>
         <div class="read-btn">
-          <a href="<?php echo esc_url( get_permalink() );?>" class="blogbutton-small hvr-sweep-to-right" title="<?php esc_attr_e( 'Read More', 'bb-ecommerce-store' ); ?>"><?php esc_html_e('Read More','bb-ecommerce-store'); ?></a>
+          <a href="<?php echo esc_url( get_permalink() );?>" class="blogbutton-small hvr-sweep-to-right" title="<?php esc_attr_e( 'Купить', 'bb-ecommerce-store' ); ?>"><?php esc_html_e('Купить','bb-ecommerce-store'); ?></a>
         </div>
       </div>	
       <div class="clearfix"></div>
